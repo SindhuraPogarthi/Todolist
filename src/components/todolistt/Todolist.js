@@ -24,6 +24,7 @@ export default function Todolist() {
     temp.splice(index, 1);
     myadd(temp);
   }
+  //
 
   const handlechange = (event) => {
     setinputvalue(event.target.value);
