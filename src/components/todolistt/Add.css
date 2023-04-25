@@ -1,0 +1,12 @@
+.ele{
+    margin: 10px 10px 30px 10px;
+    color: rgb(132, 93, 60);
+    font-weight: bold;
+    font-size: 30px;
+    font-family: 'Times New Roman';
+}
+ul{
+    color: rgb(132, 93, 60);
+    margin: 30px;
+    font-size: large;
+}
