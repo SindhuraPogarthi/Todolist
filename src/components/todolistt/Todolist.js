@@ -1,10 +1,20 @@
-import { React, useState } from 'react';
+import { React, useState,useEffect } from 'react';
 import './Todolist.css';
 import Add from './Add';
 
 export default function Todolist() {
-  const [x, myadd] = useState([]);
+  const [x, myadd] = useState(()=>{
+    const storedTasks = localStorage.getItem('anything');
+    return storedTasks ? JSON.parse(storedTasks) : [];
+  
+  });
+  useEffect(() => {
+    localStorage.setItem('anything', JSON.stringify(x));
+  }, [x]);
+  
   const [inputvalue, setinputvalue] = useState('');
+
+ 
 
   const press = (event) => {
     if (event.keyCode === 13) {
@@ -31,6 +41,7 @@ export default function Todolist() {
     console.log(inputvalue);
   }
 
+ 
   return (
     <>
       <div className='cont'>
