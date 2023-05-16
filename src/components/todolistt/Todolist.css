@@ -21,7 +21,7 @@
 }
 
 .cont{
-    width: 100%;
+    max-width: 100%;
     height: 100vh;
     background-image: url("image.jpg");
     background-repeat: no-repeat;
@@ -85,6 +85,29 @@ input:focus,input:active {
 }
 #del:hover{
     background-color: rgb(241, 61, 61);
+}
+@media (max-width: 330px) and (max-height: 742px){
+    .first{
+        height: 530px;
+        width: 300px;
+        position: relative;
+        top: 50vh;
+        left: 50vw;
+        background-color:white;
+        opacity: 1;
+        transform: translate(-50%,-50%);
+        padding: 20px 20px ;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        align-items: center;
+        border-radius: 50px;
+    }
+    .cont{
+        width: 100%;
+        height: 1000;
+        background-image: url("image.jpg");
+        background-repeat:repeat-x;
+        background-size: cover;
+    }    
 }
 
 
