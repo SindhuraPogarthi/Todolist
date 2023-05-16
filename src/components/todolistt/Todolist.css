@@ -90,8 +90,10 @@ input:focus,input:active {
     .first{
         height: 530px;
         width: 350px;
+        top: 350px;
     }
     .btn{
         margin: 0px 20px;
     }
+    
 }
