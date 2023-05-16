@@ -86,3 +86,12 @@ input:focus,input:active {
 #del:hover{
     background-color: rgb(241, 61, 61);
 }
+@media (max-width: 410px) and (max-height: 742px) {
+    .first{
+        height: 530px;
+        width: 350px;
+    }
+    .btn{
+        margin: 0px 20px;
+    }
+}
